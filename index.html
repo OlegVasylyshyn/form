@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <header>
+            <h2>Contact Us</h2>    
+        </header>
+        
+        <main>
+            <form method="POST" action="https://formspree.io/dr.dexter.ua@gmail.com">
+                <label>
+                    Enter your name
+                    <br>
+                    <input type="text" name="name" pattern="^[a-zA-Z]+$" maxlength="15" placeholder="your name" title="Enter your name in englis" required>
+                </label>
+                
+                <br><br>
+                
+                <label>
+                    Enter your email
+                    <br>
+                    <input type="email" name="email" placeholder="your email" required>
+                </label>
+                
+                <br><br>
+                
+                <label>
+                    Enter your gender
+                    <br>
+                    <span>male   : </span><input type="radio" name="gender" value="male" checked>
+                    <span>female : </span><input type="radio" name="gender" value="female" >
+                </label>
+                
+                <br><br>
+                
+                <label>
+                    Enter your phone nuber. Format 011-111-11-11
+                    <br>
+                    <input type="text" name="phone" pattern="^0[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$" placeholder="011-111-11-11" title="like this 011-111-11-11" required>
+                </label>
+                
+                <br><br>
+                
+                <label>
+                    Enter your message
+                    <br>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                </label>
+                
+                <br><br>
+                
+                <input type="image" src="./submit-button.jpg" alt="submit-button" width="150" height="80">
+            </form>
+        </main>
+        
+        <footer>
+            <p><strong>Note:</strong> All fields must be filled out.</p>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
